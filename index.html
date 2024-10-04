@@ -35,8 +35,16 @@
         <!-- Navigation Section -->
         <div class="nav-menu">
             <div class="toggle-button" id="toggle-button">
+                
                 &#9776; <!-- Hamburger icon -->
             </div>
+
+            <script>
+                document.getElementById("toggle-button").onclick = function() {
+                    const navLinks = document.getElementById("nav-links");
+                    navLinks.classList.toggle("active");
+                };
+            </script>
             <div class="nav-links" id="nav-links">
                 <a href="#">HOME v</a>
                 <a href="#">THE INSTITUTE v</a>
